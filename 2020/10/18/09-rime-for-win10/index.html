@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/amusing/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/amusing/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/amusing/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/amusing/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/amusing/css/main.css">
+
+
+<link rel="stylesheet" href="/amusing/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yorkfish.github.io","root":"/amusing/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="说明 官网地址：&gt;&gt;&gt; 传送门  RIME 在不同操作系统下有不同的名字">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小狼毫的安装与使用">
+<meta property="og:url" content="https://yorkfish.github.io/amusing/2020/10/18/09-rime-for-win10/index.html">
+<meta property="og:site_name" content="York&#39;s blog">
+<meta property="og:description" content="说明 官网地址：&gt;&gt;&gt; 传送门  RIME 在不同操作系统下有不同的名字">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-18T06:36:43.000Z">
+<meta property="article:modified_time" content="2020-10-18T09:40:59.891Z">
+<meta property="article:author" content="YorkFish">
+<meta property="article:tag" content="typewriting">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://yorkfish.github.io/amusing/2020/10/18/09-rime-for-win10/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>小狼毫的安装与使用 | York's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/amusing/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">York's blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Record interesting things.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/amusing/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/amusing/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/amusing/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/amusing/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/amusing/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://yorkfish.github.io/amusing/2020/10/18/09-rime-for-win10/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/amusing/images/avatar.gif">
+      <meta itemprop="name" content="YorkFish">
+      <meta itemprop="description" content="have fun">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="York's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          小狼毫的安装与使用
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-18 14:36:43 / 修改时间：17:40:59" itemprop="dateCreated datePublished" datetime="2020-10-18T14:36:43+08:00">2020-10-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/amusing/categories/Tools/" itemprop="url" rel="index"><span itemprop="name">Tools</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
+<li><p>官网地址：<a href="https://rime.im/" target="_blank">&gt;&gt;&gt; 传送门</a></p>
+</li>
+<li><p>RIME 在不同操作系统下有不同的名字</p>
+<a id="more"></a>
+
+<table>
+<thead>
+<tr>
+<th align="left">操作系统</th>
+<th align="left">RIME 的名称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Linux</td>
+<td align="left">中州韵</td>
+</tr>
+<tr>
+<td align="left">MacOS</td>
+<td align="left">鼠须管</td>
+</tr>
+<tr>
+<td align="left">Windows</td>
+<td align="left">小狼毫</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
+<li>我把软件装在 <code>D:\Rime</code></li>
+<li>安装时可以自定义用户文件夹，我指定的是 <code>D:\Rime\MyConfigData</code></li>
+</ul>
+<h2 id="添加小鹤双拼"><a href="#添加小鹤双拼" class="headerlink" title="添加小鹤双拼"></a>添加小鹤双拼</h2><h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><ol>
+<li>仓库地址：<code>https://github.com/rime/rime-double-pinyin</code></li>
+<li>下载文件 &gt; 解压</li>
+<li>将文档 <code>double_pinyin_flypy.schema.yaml</code> 拷贝到 <code>MyConfigData</code></li>
+<li>右键右下角输入法图标 &gt; 输入法设定 &gt; 勾选 <code>小鶴雙拼</code> &gt; 中</li>
+<li>等待“维护”即可</li>
+</ol>
+<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><ol>
+<li>右键右下角输入法图标 &gt; 输入法设定</li>
+<li>点击弹窗左下角的“获取更多输入方案”（需要登录 GitHub）</li>
+<li>在弹窗的 <code>Enter package name, URL, user/repo or downloaded ZIP to install:</code> 后输入相应信息，等待安装</li>
+<li>勾选 <code>小鶴雙拼</code> -&gt; 中</li>
+<li>等待“维护”</li>
+</ol>
+<h2 id="激活特殊符号"><a href="#激活特殊符号" class="headerlink" title="激活特殊符号"></a>激活特殊符号</h2><h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><ol>
+<li><p>在 <code>MyConfigData</code> 新建文档 <code>double_pinyin_flypy.custom.yaml</code></p>
+</li>
+<li><p>写入如下语句，保存退出</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">patch:</span><br><span class="line">  &quot;punctuator&#x2F;import_preset&quot;: symbols</span><br><span class="line">  &quot;recognizer&#x2F;patterns&#x2F;punct&quot;: &quot;^&#x2F;([A-Z|a-z]*|[0-9]|10)$&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>右键右下角输入法图标 &gt; 重新部署</p>
+</li>
+</ol>
+<h3 id="说明-1"><a href="#说明-1" class="headerlink" title="说明"></a>说明</h3><ul>
+<li>想在别的输入法，如“明月拼音”上用，新建 <code>luna_pinyin_simp.custom.yaml</code>，再来一遍即可</li>
+<li>若懒得新建，可以直接把 <code>&#123;安装根目录&#125;/weasel-0.14.3/data/symbols.yaml</code> 的内容拷贝到 <code>&#123;安装根目录&#125;/MyConfigData/default.custom.yaml</code> 下</li>
+</ul>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><ul>
+<li>从正则表达式 <code>^/([A-Z|a-z]*|[0-9]|10)$</code> 上看<ol>
+<li><code>/</code> + 字母（大小写）</li>
+<li><code>/</code> + 数字（零到十）</li>
+</ol>
+</li>
+<li>常用的，如<ul>
+<li><code>/fh</code> 符号</li>
+<li><code>/sx</code> 数学符号</li>
+<li><code>/xl</code> 希腊字母</li>
+</ul>
+</li>
+<li>具体可在 <code>&#123;安装根目录&#125;/weasel-0.14.3/data/symbols.yaml</code> 中搜索 <code>symbols</code> 查看</li>
+</ul>
+<h2 id="添加五笔"><a href="#添加五笔" class="headerlink" title="添加五笔"></a>添加五笔</h2><ul>
+<li><p>仓库地址：<code>https://github.com/rime/rime-wubi</code></p>
+</li>
+<li><p>方法与“小鹤双拼”一样</p>
+</li>
+<li><p>纯五笔比较方便</p>
+</li>
+<li><p>若想使用“五笔-拼音”，还需要安装“袖珍简化字拼音”，仓库地址：<code>https://github.com/rime/rime-pinyin-simp</code></p>
+</li>
+<li><p>安装完成后，重新部署一下</p>
+</li>
+</ul>
+<h2 id="添加英文"><a href="#添加英文" class="headerlink" title="添加英文"></a>添加英文</h2><h3 id="相关文件"><a href="#相关文件" class="headerlink" title="相关文件"></a>相关文件</h3><ul>
+<li>B 站一位 UP 的<a href="https://www.bilibili.com/video/BV1cW411Z7zt" target="_blank">视频</a>下有链接</li>
+<li>个人使用频率不高</li>
+</ul>
+<h3 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h3><ol>
+<li>把文件 <code>easy_en_dict.yaml</code> 与 <code>easy_en_schema.yaml</code> 拷贝到 <code>MyConfigData</code></li>
+<li>右键右下角输入法图标 &gt; 输入法设定 &gt; 勾选 <code>Easy English</code> &gt; 中</li>
+<li>等待“维护”</li>
+</ol>
+<h2 id="更改功能键"><a href="#更改功能键" class="headerlink" title="更改功能键"></a>更改功能键</h2><ol>
+<li><p>打开 <code>&#123;安装根目录&#125;/MyConfigData/default.custom.yaml</code></p>
+</li>
+<li><p>添加如下语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;ascii_composer&#x2F;switch_key&quot;:</span><br><span class="line">    Caps_Lock: noop</span><br><span class="line">    Shift_L: commit_code</span><br><span class="line">    Shift_R: commit_code</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重新部署</p>
+</li>
+</ol>
+<h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><table>
+<thead>
+<tr>
+<th align="left">模式</th>
+<th align="left">释义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>inline_ascii</code></td>
+<td align="left">中文状态下输入字母、数字、符号、空格等，回车上屏</td>
+</tr>
+<tr>
+<td align="left"><code>commit_text</code></td>
+<td align="left">中文状态下，已输入的候选文字以中文形式上屏，然后切至英文</td>
+</tr>
+<tr>
+<td align="left"><code>commit_code</code></td>
+<td align="left">中文状态下，已输入的候选文字以英文形式上屏，然后切至英文</td>
+</tr>
+<tr>
+<td align="left"><code>noop</code></td>
+<td align="left">屏蔽该切换键</td>
+</tr>
+</tbody></table>
+<h2 id="取消一键多值"><a href="#取消一键多值" class="headerlink" title="取消一键多值"></a>取消一键多值</h2><h3 id="说明-2"><a href="#说明-2" class="headerlink" title="说明"></a>说明</h3><ul>
+<li>个人打中文时用不到那么多选项，所以想“一一对应”</li>
+<li>可以修改默认配置文件，也可以更改对应的输入法的配置文件</li>
+<li>若只更改对应输入法的配置文件，“重新部署”会重置所做的修改</li>
+<li>我用“双拼”较多，就只更改“双拼的配置”</li>
+</ul>
+<h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><ol>
+<li><p>打开 <code>&#123;安装根目录&#125;/MyConfigData/build/double_pinyin_flypy.schema.yaml</code></p>
+</li>
+<li><p>找到 <code>half_shape</code>，即半角，删除不想要的多值（sublime 的 <code>&lt;C-S-del&gt;</code> 派上用场）</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">half_shape:</span><br><span class="line">    &quot;!&quot;: &#123;commit: &quot;！&quot;&#125;</span><br><span class="line">    &quot;\&quot;&quot;: &#123;pair: [&quot;“&quot;, &quot;”&quot;]&#125;</span><br><span class="line">    &quot;#&quot;: &quot;#&quot;</span><br><span class="line">    &quot;$&quot;: &quot;￥&quot;</span><br><span class="line">    &quot;%&quot;: &quot;%&quot;</span><br><span class="line">    &quot;&amp;&quot;: &quot;&amp;&quot;</span><br><span class="line">    &quot;&#39;&quot;: &#123;pair: [&quot;‘&quot;, &quot;’&quot;]&#125;</span><br><span class="line">    &quot;(&quot;: &quot;（&quot;</span><br><span class="line">    &quot;)&quot;: &quot;）&quot;</span><br><span class="line">    &quot;*&quot;: &quot;*&quot;</span><br><span class="line">    &quot;+&quot;: &quot;+&quot;</span><br><span class="line">    &quot;,&quot;: &#123;commit: &quot;，&quot;&#125;</span><br><span class="line">    &quot;-&quot;: &quot;-&quot;</span><br><span class="line">    .: &#123;commit: &quot;。&quot;&#125;</span><br><span class="line">    &quot;&#x2F;&quot;: &quot;&#x2F;&quot;</span><br><span class="line">    &quot;:&quot;: &#123;commit: &quot;：&quot;&#125;</span><br><span class="line">    &quot;;&quot;: &#123;commit: &quot;；&quot;&#125;</span><br><span class="line">    &quot;&lt;&quot;: &quot;《&quot;</span><br><span class="line">    &quot;&#x3D;&quot;: &quot;&#x3D;&quot;</span><br><span class="line">    &quot;&gt;&quot;: &quot;》&quot;</span><br><span class="line">    &quot;?&quot;: &#123;commit: &quot;？&quot;&#125;</span><br><span class="line">    &quot;@&quot;: &quot;@&quot;</span><br><span class="line">    &quot;[&quot;: &quot;[&quot;</span><br><span class="line">    &quot;\\&quot;: &quot;、&quot;</span><br><span class="line">    &quot;]&quot;: &quot;]&quot;</span><br><span class="line">    &quot;^&quot;: &#123;commit: &quot;……&quot;&#125;</span><br><span class="line">    _: &quot;——&quot;</span><br><span class="line">    &quot;&#96;&quot;: &quot;&#96;&quot;</span><br><span class="line">    &quot;&#123;&quot;: &quot;&#123;&quot;</span><br><span class="line">    &quot;|&quot;: &quot;|&quot;</span><br><span class="line">    &quot;&#125;&quot;: &quot;&#125;&quot;</span><br><span class="line">    &quot;~&quot;: &quot;~&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重新部署</p>
+</li>
+</ol>
+<h2 id="删除记忆词语"><a href="#删除记忆词语" class="headerlink" title="删除记忆词语"></a>删除记忆词语</h2><ul>
+<li>若有词语打错，输入法并不知道其有错别字，仍会将其记录下来</li>
+<li>删除方法<ol>
+<li>再打一遍，使用上下键选择到对应的词语</li>
+<li>使用快捷键 <kbd>Shift/Ctrl</kbd> + <kbd>Del</kbd> 即可删除记录</li>
+</ol>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/amusing/tags/typewriting/" rel="tag"># typewriting</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/amusing/2020/10/08/08-cmder/" rel="prev" title="cmder">
+      <i class="fa fa-chevron-left"></i> cmder
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%B0%8F%E9%B9%A4%E5%8F%8C%E6%8B%BC"><span class="nav-number">3.</span> <span class="nav-text">添加小鹤双拼</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80"><span class="nav-number">3.1.</span> <span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C"><span class="nav-number">3.2.</span> <span class="nav-text">方法二</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BF%80%E6%B4%BB%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7"><span class="nav-number">4.</span> <span class="nav-text">激活特殊符号</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE"><span class="nav-number">4.1.</span> <span class="nav-text">设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E-1"><span class="nav-number">4.2.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-number">4.3.</span> <span class="nav-text">使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E4%BA%94%E7%AC%94"><span class="nav-number">5.</span> <span class="nav-text">添加五笔</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E8%8B%B1%E6%96%87"><span class="nav-number">6.</span> <span class="nav-text">添加英文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6"><span class="nav-number">6.1.</span> <span class="nav-text">相关文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E6%93%8D%E4%BD%9C"><span class="nav-number">6.2.</span> <span class="nav-text">具体操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E5%8A%9F%E8%83%BD%E9%94%AE"><span class="nav-number">7.</span> <span class="nav-text">更改功能键</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E9%87%8A"><span class="nav-number">7.1.</span> <span class="nav-text">解释</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%96%E6%B6%88%E4%B8%80%E9%94%AE%E5%A4%9A%E5%80%BC"><span class="nav-number">8.</span> <span class="nav-text">取消一键多值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E-2"><span class="nav-number">8.1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C"><span class="nav-number">8.2.</span> <span class="nav-text">操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E8%AE%B0%E5%BF%86%E8%AF%8D%E8%AF%AD"><span class="nav-number">9.</span> <span class="nav-text">删除记忆词语</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">YorkFish</p>
+  <div class="site-description" itemprop="description">have fun</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/amusing/archives/">
+        
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/amusing/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/amusing/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">YorkFish</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/amusing/lib/anime.min.js"></script>
+  <script src="/amusing/lib/velocity/velocity.min.js"></script>
+  <script src="/amusing/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/amusing/js/utils.js"></script>
+
+<script src="/amusing/js/motion.js"></script>
+
+
+<script src="/amusing/js/schemes/pisces.js"></script>
+
+
+<script src="/amusing/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
