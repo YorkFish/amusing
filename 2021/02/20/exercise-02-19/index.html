@@ -20,21 +20,21 @@
     var CONFIG = {"hostname":"yorkfish.github.io","root":"/amusing/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="活动时间：2021-01-14  题目描述 AcWing 680 简单 有 N 根绳子，第 i 根绳子长度为 Li， 现在需要 M 根等长的绳子，你可以对 N 根绳子进行任意裁剪（不能拼接）， 请你帮忙计算出这 M 根绳子最长的长度是多少。">
+  <meta name="description" content="活动时间：2021-02-19 ps: 2021-02-18 没有出题  题目描述 AcWing 3232 简单 小明正在利用股票的波动程度来研究股票。 小明拿到了一只股票每天收盘时的价格，他想知道，这只股票连续几天的最大波动值是多少， 即在这几天中某天收盘价格与前一天收盘价格之差的绝对值最大是多少。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剪绳子">
-<meta property="og:url" content="https://yorkfish.github.io/amusing/2021/01/15/exercise-01-14/index.html">
+<meta property="og:title" content="最大波动">
+<meta property="og:url" content="https://yorkfish.github.io/amusing/2021/02/20/exercise-02-19/index.html">
 <meta property="og:site_name" content="York&#39;s blog">
-<meta property="og:description" content="活动时间：2021-01-14  题目描述 AcWing 680 简单 有 N 根绳子，第 i 根绳子长度为 Li， 现在需要 M 根等长的绳子，你可以对 N 根绳子进行任意裁剪（不能拼接）， 请你帮忙计算出这 M 根绳子最长的长度是多少。">
+<meta property="og:description" content="活动时间：2021-02-19 ps: 2021-02-18 没有出题  题目描述 AcWing 3232 简单 小明正在利用股票的波动程度来研究股票。 小明拿到了一只股票每天收盘时的价格，他想知道，这只股票连续几天的最大波动值是多少， 即在这几天中某天收盘价格与前一天收盘价格之差的绝对值最大是多少。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-15T03:44:20.000Z">
-<meta property="article:modified_time" content="2021-01-19T05:56:08.140Z">
+<meta property="article:published_time" content="2021-02-20T05:48:39.000Z">
+<meta property="article:modified_time" content="2021-02-20T05:50:01.407Z">
 <meta property="article:author" content="YorkFish">
 <meta property="article:tag" content="winter vacation">
-<meta property="article:tag" content="浮点数二分">
+<meta property="article:tag" content="枚举">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://yorkfish.github.io/amusing/2021/01/15/exercise-01-14/">
+<link rel="canonical" href="https://yorkfish.github.io/amusing/2021/02/20/exercise-02-19/">
 
 
 <script id="page-configurations">
@@ -47,7 +47,7 @@
   };
 </script>
 
-  <title>剪绳子 | York's blog</title>
+  <title>最大波动 | York's blog</title>
   
 
 
@@ -168,7 +168,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yorkfish.github.io/amusing/2021/01/15/exercise-01-14/">
+    <link itemprop="mainEntityOfPage" href="https://yorkfish.github.io/amusing/2021/02/20/exercise-02-19/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/amusing/images/avatar.gif">
@@ -181,7 +181,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          剪绳子
+          最大波动
         </h1>
 
         <div class="post-meta">
@@ -190,16 +190,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-01-15 11:44:20" itemprop="dateCreated datePublished" datetime="2021-01-15T11:44:20+08:00">2021-01-15</time>
+              <time title="创建时间：2021-02-20 13:48:39 / 修改时间：13:50:01" itemprop="dateCreated datePublished" datetime="2021-02-20T13:48:39+08:00">2021-02-20</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-19 13:56:08" itemprop="dateModified" datetime="2021-01-19T13:56:08+08:00">2021-01-19</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -222,52 +216,43 @@
 
       
         <ul>
-<li>活动时间：2021-01-14</li>
+<li>活动时间：2021-02-19</li>
+<li>ps: 2021-02-18 没有出题</li>
 </ul>
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><ul>
-<li>AcWing 680</li>
+<li>AcWing 3232</li>
 <li><font color="green">简单</font></li>
-<li>有 <code>N</code> 根绳子，第 <code>i</code> 根绳子长度为 L<sub>i</sub>，</li>
-<li>现在需要 <code>M</code> 根等长的绳子，你可以对 <code>N</code> 根绳子进行任意裁剪（不能拼接），</li>
-<li>请你帮忙计算出这 <code>M</code> 根绳子最长的长度是多少。<a id="more"></a>
+<li>小明正在利用股票的波动程度来研究股票。</li>
+<li>小明拿到了一只股票每天收盘时的价格，他想知道，这只股票连续几天的最大波动值是多少，</li>
+<li>即在这几天中某天收盘价格与前一天收盘价格之差的绝对值最大是多少。<a id="more"></a>
 
 </li>
 </ul>
 <h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><ul>
-<li>第一行包含 <code>2</code> 个正整数 <code>N</code>, <code>M</code>，表示原始绳子的数量和需求绳子的数量。</li>
-<li>第二行包含 <code>N</code> 个整数，其中第 <code>i</code> 个整数 L<sub>i</sub> 表示第 <code>i</code> 根绳子的长度。</li>
+<li>输入的第一行包含了一个整数 <code>n</code>，表示小明拿到的收盘价格的连续天数。</li>
+<li>第二行包含 <code>n</code> 个正整数，依次表示每天的收盘价格。</li>
 </ul>
 <h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><ul>
-<li>输出一个数字，表示裁剪后最长的长度，保留两位小数。</li>
+<li>输出一个整数，表示这只股票这 <code>n</code> 天中的最大波动值。</li>
 </ul>
 <h2 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h2><ul>
-<li><code>1 &lt;= N,M &lt;= 100,000</code></li>
-<li>0 &lt; L<sub>i</sub> &lt; 10<sup>9</sup></li>
+<li>对于所有评测用例，<code>2 &lt;= n &lt;= 1000</code>。</li>
+<li>股票每一天的价格为 <code>1</code> 到 <code>10,000</code> 之间的整数。</li>
 </ul>
-<h2 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h2><h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3 4</span><br><span class="line">3 5 4</span><br></pre></td></tr></table></figure>
+<h2 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h2><h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">6</span><br><span class="line">2 5 5 7 3 5</span><br></pre></td></tr></table></figure>
 
-<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2.50</span><br></pre></td></tr></table></figure>
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
 
 <h3 id="样例解释"><a href="#样例解释" class="headerlink" title="样例解释"></a>样例解释</h3><ul>
-<li>第一根和第三根分别裁剪出一根 <code>2.50</code> 长度的绳子，</li>
-<li>第二根剪成 <code>2</code> 根 <code>2.50</code> 长度的绳子，刚好 <code>4</code> 根。</li>
+<li>第四天和第五天之间的波动最大，波动值为 <code>|3 − 7| = 4</code>。</li>
 </ul>
 <h2 id="默认代码"><a href="#默认代码" class="headerlink" title="默认代码"></a>默认代码</h2><ul>
 <li>无</li>
 </ul>
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ol>
-<li>设裁剪后的长度为 <code>x</code></li>
-<li>计算给定的绳子能被裁剪成几段长为 <code>x</code> 的绳子，不妨记作 <code>y</code> 段</li>
-<li>判断 <code>M</code> 与 <code>y</code> 的关系<ul>
-<li>若 <code>M &lt;= y</code>，说明可以再裁长点，此时改变左端点</li>
-<li>若 <code>y &lt; M</code>，说明裁长了，此时改变右端点</li>
-</ul>
-</li>
-</ol>
-<h3 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">100010</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, m;</span><br><span class="line"><span class="keyword">int</span> ropes[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">check</span><span class="params">(<span class="keyword">double</span> mid)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i ++ ) cnt += ropes[i] / mid;</span><br><span class="line">    <span class="keyword">return</span> m &lt;= cnt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n &gt;&gt; m;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i ++ ) <span class="built_in">cin</span> &gt;&gt; ropes[i];</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">double</span> l = <span class="number">0</span>, r = <span class="number">1e9</span>;</span><br><span class="line">    <span class="keyword">while</span> (r - l &gt; <span class="number">1e-4</span>) &#123;</span><br><span class="line">        <span class="keyword">double</span> mid = (l + r) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span> (check(mid)) l = mid;</span><br><span class="line">        <span class="keyword">else</span> r = mid;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%.2f\n&quot;</span>, r);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><h3 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">1010</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> nums[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i ++ ) <span class="built_in">cin</span> &gt;&gt; nums[i];</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i ++ ) res = max(res, <span class="built_in">abs</span>(nums[i] - nums[i - <span class="number">1</span>]));</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; res &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">check</span>(<span class="params">ropes, mid, m</span>):</span></span><br><span class="line">    cnt = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> rope <span class="keyword">in</span> ropes:</span><br><span class="line">        cnt += rope // mid</span><br><span class="line">    <span class="keyword">return</span> m &lt;= cnt</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    n, m = map(int, input().split())</span><br><span class="line">    ropes = list(map(int, input().split()))</span><br><span class="line">    </span><br><span class="line">    l, r = <span class="number">0</span>, max(ropes)</span><br><span class="line">    <span class="keyword">while</span> r - l &gt; <span class="number">1e-4</span>:</span><br><span class="line">        mid = (l + r) / <span class="number">2</span></span><br><span class="line">        <span class="keyword">if</span> check(ropes, mid, m):</span><br><span class="line">            l = mid</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            r = mid</span><br><span class="line">    print(<span class="string">&quot;%.2f&quot;</span> % r)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">n = int(input())</span><br><span class="line">nums = list(map(int, input().split()))</span><br><span class="line"></span><br><span class="line">res = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(n - <span class="number">1</span>):</span><br><span class="line">    res = max(res, abs(nums[i] - nums[i + <span class="number">1</span>]))</span><br><span class="line">print(res)</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -278,7 +263,7 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/amusing/tags/winter-vacation/" rel="tag"># winter vacation</a>
-              <a href="/amusing/tags/%E6%B5%AE%E7%82%B9%E6%95%B0%E4%BA%8C%E5%88%86/" rel="tag"># 浮点数二分</a>
+              <a href="/amusing/tags/%E6%9E%9A%E4%B8%BE/" rel="tag"># 枚举</a>
           </div>
 
         
@@ -287,13 +272,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/amusing/2021/01/14/exercise-01-13/" rel="prev" title="回文平方">
-      <i class="fa fa-chevron-left"></i> 回文平方
+    <a href="/amusing/2021/02/18/exercise-02-17/" rel="prev" title="画图">
+      <i class="fa fa-chevron-left"></i> 画图
     </a></div>
-      <div class="post-nav-item">
-    <a href="/amusing/2021/01/16/exercise-01-15/" rel="next" title="分巧克力">
-      分巧克力 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
