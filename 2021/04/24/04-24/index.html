@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"yorkfish.github.io","root":"/amusing/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="题目写一个函数，求两个整数之和，要求在函数体内不得使用 ＋、－、×、÷ 四则运算符号。">
+  <meta name="description" content="题目一个整数总可以拆分为 2 的幂的和。例如：7 可以拆分成7 &#x3D; 1+2+4,7 &#x3D; 1+2+2+2,7 &#x3D; 1+1+1+4,7 &#x3D; 1+1+1+2+2,7 &#x3D; 1+1+1+1+1+2,7 &#x3D; 1+1+1+1+1+1+1。共计 6 种不同拆分方式。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="85 不用加减乘除做加法">
-<meta property="og:url" content="https://yorkfish.github.io/amusing/2021/03/22/03-22/index.html">
+<meta property="og:title" content="3382 整数拆分">
+<meta property="og:url" content="https://yorkfish.github.io/amusing/2021/04/24/04-24/index.html">
 <meta property="og:site_name" content="York&#39;s blog">
-<meta property="og:description" content="题目写一个函数，求两个整数之和，要求在函数体内不得使用 ＋、－、×、÷ 四则运算符号。">
+<meta property="og:description" content="题目一个整数总可以拆分为 2 的幂的和。例如：7 可以拆分成7 &#x3D; 1+2+4,7 &#x3D; 1+2+2+2,7 &#x3D; 1+1+1+4,7 &#x3D; 1+1+1+2+2,7 &#x3D; 1+1+1+1+1+2,7 &#x3D; 1+1+1+1+1+1+1。共计 6 种不同拆分方式。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-03-22T13:35:32.000Z">
-<meta property="article:modified_time" content="2021-04-07T15:02:36.242Z">
+<meta property="article:published_time" content="2021-04-24T13:29:23.000Z">
+<meta property="article:modified_time" content="2021-04-24T13:41:02.303Z">
 <meta property="article:author" content="YorkFish">
-<meta property="article:tag" content="位运算">
+<meta property="article:tag" content="背包问题">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://yorkfish.github.io/amusing/2021/03/22/03-22/">
+<link rel="canonical" href="https://yorkfish.github.io/amusing/2021/04/24/04-24/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>85 不用加减乘除做加法 | York's blog</title>
+  <title>3382 整数拆分 | York's blog</title>
   
 
 
@@ -167,7 +167,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yorkfish.github.io/amusing/2021/03/22/03-22/">
+    <link itemprop="mainEntityOfPage" href="https://yorkfish.github.io/amusing/2021/04/24/04-24/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/amusing/images/avatar.gif">
@@ -180,7 +180,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          85 不用加减乘除做加法
+          3382 整数拆分
         </h1>
 
         <div class="post-meta">
@@ -189,16 +189,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-03-22 21:35:32" itemprop="dateCreated datePublished" datetime="2021-03-22T21:35:32+08:00">2021-03-22</time>
+              <time title="创建时间：2021-04-24 21:29:23 / 修改时间：21:41:02" itemprop="dateCreated datePublished" datetime="2021-04-24T21:29:23+08:00">2021-04-24</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-07 23:02:36" itemprop="dateModified" datetime="2021-04-07T23:02:36+08:00">2021-04-07</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -220,24 +214,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>写一个函数，求两个整数之和，要求在函数体内不得使用 ＋、－、×、÷ 四则运算符号。</p>
+        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>一个整数总可以拆分为 2 的幂的和。<br>例如：7 可以拆分成<br>7 = 1+2+4,<br>7 = 1+2+2+2,<br>7 = 1+1+1+4,<br>7 = 1+1+1+2+2,<br>7 = 1+1+1+1+1+2,<br>7 = 1+1+1+1+1+1+1。<br>共计 6 种不同拆分方式。</p>
 <a id="more"></a>
-
-<h2 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：num1 &#x3D; 1 , num2 &#x3D; 2</span><br><span class="line"></span><br><span class="line">输出：3</span><br></pre></td></tr></table></figure>
-
-<h2 id="Default-Code"><a href="#Default-Code" class="headerlink" title="Default Code"></a>Default Code</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> num1, <span class="keyword">int</span> num2)</span></span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
+<p>再比如：4 可以拆分成<br>4 = 4,<br>4 = 1+1+1+1,<br>4 = 2+2,<br>4 = 1+1+2。<br>用 f(n) 表示 n 的不同拆分的种数，例如 f(7)=6。<br>要求编写程序，读入 n，输出 f(n) mod 10^9。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>一个整数 n。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一个整数，表示 f(n) mod 10^9。</p>
+<h2 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h2><p>1 &lt;= N &lt;= 10^6</p>
+<h2 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h2><p>7</p>
+<h2 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h2><p>6</p>
+<h2 id="Default-Code"><a href="#Default-Code" class="headerlink" title="Default Code"></a>Default Code</h2><p>无</p>
+<hr>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul>
-<li><strong>不进位的加法</strong>就是“一个是1另一个是0 =&gt; 取到1”，正好可以用<strong>异或</strong>表示</li>
-<li><strong>进位的加法</strong>就是“两个都是1 =&gt; 取到10”，正好可以用<strong>相与</strong>表示，因为进位，所以需要左移一位</li>
+<li>思路：没有顺序，这就是“完全背包”问题，整数本身是背包体积，拆分的数是物品</li>
+<li>时间复杂度：O(nlogn)</li>
 </ul>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> num1, <span class="keyword">int</span> num2)</span></span>&#123;</span><br><span class="line">        <span class="keyword">while</span> (num2) &#123;</span><br><span class="line">            <span class="keyword">int</span> sum = num1 ^ num2;</span><br><span class="line">            <span class="keyword">int</span> carry = (num1 &amp; num2) &lt;&lt; <span class="number">1</span>;</span><br><span class="line">            num1 = sum, num2 = carry;  <span class="comment">// 因为 num1 + num2 = sum + carry</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> num1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><ul>
-<li>结论：O(logn) n为num的二进制长度</li>
-<li>如下测试的话，每次都是5.xxx</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span> randrange</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">times_of_add</span>(<span class="params">self, num1: int, num2: int</span>) -&gt; int:</span></span><br><span class="line">        cnt = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> num2:</span><br><span class="line">            sum_ = num1 ^ num2</span><br><span class="line">            carry = (num1 &amp; num2) &lt;&lt; <span class="number">1</span></span><br><span class="line">            num1, num2 = sum_, carry</span><br><span class="line">            cnt += <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> cnt</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    s = Solution()</span><br><span class="line"></span><br><span class="line">    times = <span class="number">0</span></span><br><span class="line">    range_times = <span class="number">100000</span></span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(range_times):</span><br><span class="line">        num1 = randrange(<span class="number">0</span>, <span class="number">1073741823</span>)</span><br><span class="line">        num2 = randrange(<span class="number">0</span>, <span class="number">1073741823</span>)</span><br><span class="line">        times += s.times_of_add(num1, num2)</span><br><span class="line">    print(times / range_times)</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">1e6</span> + <span class="number">10</span>, mod = <span class="number">1e9</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> f[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    f[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i *= <span class="number">2</span>)  <span class="comment">// 物品</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt;= n; j ++ )  <span class="comment">// 体积</span></span><br><span class="line">            f[j] = (f[j] + f[j - i]) % mod;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; f[n] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -247,7 +238,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/amusing/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/" rel="tag"># 位运算</a>
+              <a href="/amusing/tags/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" rel="tag"># 背包问题</a>
           </div>
 
         
@@ -256,13 +247,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/amusing/2021/03/21/03-21/" rel="prev" title="3174 旋转">
-      <i class="fa fa-chevron-left"></i> 3174 旋转
+    <a href="/amusing/2021/04/23/04-23/" rel="prev" title="12 背包问题求具体方案">
+      <i class="fa fa-chevron-left"></i> 12 背包问题求具体方案
     </a></div>
-      <div class="post-nav-item">
-    <a href="/amusing/2021/03/23/03-23/" rel="next" title="1497 树的遍历">
-      1497 树的遍历 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -321,7 +309,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B7%E4%BE%8B"><span class="nav-number">2.</span> <span class="nav-text">样例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Default-Code"><span class="nav-number">3.</span> <span class="nav-text">Default Code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">4.</span> <span class="nav-text">Solution</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="nav-number">4.1.</span> <span class="nav-text">时间复杂度</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">输入格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F"><span class="nav-number">3.</span> <span class="nav-text">输出格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E8%8C%83%E5%9B%B4"><span class="nav-number">4.</span> <span class="nav-text">数据范围</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A0%B7%E4%BE%8B"><span class="nav-number">5.</span> <span class="nav-text">输入样例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E6%A0%B7%E4%BE%8B"><span class="nav-number">6.</span> <span class="nav-text">输出样例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Default-Code"><span class="nav-number">7.</span> <span class="nav-text">Default Code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">8.</span> <span class="nav-text">Solution</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
