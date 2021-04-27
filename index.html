@@ -163,6 +163,90 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://yorkfish.github.io/amusing/2021/04/27/04-27/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/amusing/images/avatar.gif">
+      <meta itemprop="name" content="YorkFish">
+      <meta itemprop="description" content="have fun">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="York's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/amusing/2021/04/27/04-27/" class="post-title-link" itemprop="url">1589 构建二叉搜索树</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-04-27 21:23:36 / 修改时间：21:34:48" itemprop="dateCreated datePublished" datetime="2021-04-27T21:23:36+08:00">2021-04-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/amusing/categories/AcWing/" itemprop="url" rel="index"><span itemprop="name">AcWing</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><ul>
+<li><p>二叉搜索树 (BST) 递归定义为具有以下属性的二叉树：</p>
+<ul>
+<li>若它的左子树不空，则左子树上所有结点的值均小于它的根结点的值</li>
+<li>若它的右子树不空，则右子树上所有结点的值均大于或等于它的根结点的值</li>
+<li>它的左、右子树也分别为二叉搜索树</li>
+<li>给定二叉树的具体结构以及一系列不同的整数，只有一种方法可以将这些数填充到树中，以使结果树满足 BST 的定义。</li>
+</ul>
+</li>
+<li><p>请你输出结果树的层序遍历。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/amusing/2021/04/27/04-27/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://yorkfish.github.io/amusing/2021/04/26/04-26/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -837,81 +921,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yorkfish.github.io/amusing/2021/04/23/04-14/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/amusing/images/avatar.gif">
-      <meta itemprop="name" content="YorkFish">
-      <meta itemprop="description" content="have fun">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="York's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/amusing/2021/04/23/04-14/" class="post-title-link" itemprop="url">142 前缀统计</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-04-23 13:45:46 / 修改时间：13:51:37" itemprop="dateCreated datePublished" datetime="2021-04-23T13:45:46+08:00">2021-04-23</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/amusing/categories/AcWing/" itemprop="url" rel="index"><span itemprop="name">AcWing</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给定 N 个字符串 S1,S2,…,SN，接下来进行 M 次询问，每次询问给定一个字符串 T，求 S1~SN 中有多少个字符串是 T 的前缀。<br>输入字符串的总长度不超过 10^6，仅包含小写字母。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/amusing/2021/04/23/04-14/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -981,7 +990,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/amusing/archives/">
         
-          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-count">35</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
